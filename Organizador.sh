@@ -12,10 +12,12 @@ for i in "${Archivos[@]}"; do
     case "$extencion" in 
         jpg|png|jpeg)
             mv "$i" $HOME/Pictures/
-            echo "listo"
             ;;
-        mp4)
+        mp4|mkv)
             mv "$i" $HOME/Videos/
+            ;;
+        pdf|txt|docx)
+            mv "$i" $HOME/Documents/
             ;;
     esac
 done
