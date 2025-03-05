@@ -19,5 +19,8 @@ for i in "${Archivos[@]}"; do
         pdf|txt|docx)
             mv "$i" $HOME/Documents/
             ;;
+        *)
+            mv "$i" $HOME/Otros/
+            ;;
     esac
 done
